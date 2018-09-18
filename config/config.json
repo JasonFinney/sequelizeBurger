@@ -1,9 +1,8 @@
-var keys = require("./keys")
 {
   "development": {
     "username": "root",
-    "password": "process.env.development_password",
-    "database": "database_development",
+    "password": "root",
+    "database": "eatburger_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
@@ -15,9 +14,7 @@ var keys = require("./keys")
     "dialect": "mysql"
   },
   "production": {
-    "username": ,
-    "password": ,
-    "database": ,
+    "use_env_variable": "JAWSDB_URL",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
