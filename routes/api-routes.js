@@ -3,6 +3,7 @@ var db = require("../models");
 module.exports = function (app) {
     app.get("/", function (req, res) {
         db.Burger.findAll({}).then(function (results) {
+            console.log(results);
             res.json(results);
         });
     });
